@@ -52,6 +52,22 @@ Catatan: Tidak boleh menggunakan crontab
 
 ```
 Langkah-Langkah :
+
+1. Membuat daemon yg berjalan setiap 3 detik
+
+2. Cek apakah file elen.ku ada di dalam folder hatiku
+
+3. Setelah di cek dan ada, ubah permission file menggunakan chmod
+
+4. Cek dan dapatkan data dari owner dan group dengan getpwuid dan getgrgid
+
+5. Data dari owner dan group akan disimpan untuk diubah
+
+6. Setelah itu baru kita bisa mengakses owner dan group
+
+7. Cek apakah owner dari file adalah www-data
+
+8. Jika iya maka file akan dihapus
 ```
 
 3. Diberikan file campur2.zip. Di dalam file tersebut terdapat folder “campur2”. 
